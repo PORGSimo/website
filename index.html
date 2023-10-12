@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <div class="header">
+        <b><a href="https://www.google.com/" class="title">Simon Kapicka</a></b>
+        <ul class="header_buttons">
+            <li><a href="rozvrh.html">Rozvrh</a></li>
+        </ul>
+    </div>
+    <div class="body">
+        <p>Ahoj franto, to cumis, co?</p>
+        <button class="testbutt" onclick="testclick()">Click me!</button>
+        <ul class="testbuttonsanswers"></ul>
+
+        <table border="2px">
+            <thead>
+                <tr>
+                    <th></th>
+                    <td colspan="3">Hi</td>
+                </tr>
+                <tr>
+                    <td rowspan="3">efs</td>
+                    <th>First row</th>
+                    <th>Second row</th>
+                    <th>Third row</th>
+                </tr>
+                <tr>
+                    <th>R1S1</th>
+                    <th>R1S2</th>
+                    <th>R1S3</th>
+                </tr>
+                <tr>
+                    <th>R2S1</th>
+                    <th>R2S2</th>
+                    <th>R2S3</th>
+                </tr>
+            </thead>
+        </table>
+        <!-- <a href="contact.html"><img src="../imgs/home.png" id="homeimg"></a> -->
+    </div>
+    <div class="footer"></div>
+
+
+    <script>
+        function testclick() {
+            const newElem = document.createElement("h1");
+            newElem.textContent = "You clicked the button!!!";
+            const div = document.getElementsByClassName("testbuttonsanswers")[0];
+            div.appendChild(newElem);
+            // console.log("You clicked the button!!!");
+        }
+    </script>
+</body>
+</html>
